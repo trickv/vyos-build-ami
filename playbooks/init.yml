@@ -1,8 +1,0 @@
-- name: Setup
-  hosts: local
-  connection: local
-  gather_facts: False
-
-  tasks:
-    - fail: msg="Assert that an ISO is specified"
-      when: iso == ""
